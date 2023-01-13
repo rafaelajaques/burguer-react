@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background: #0A0A10;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,15 +19,6 @@ export const ContainerItems = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
-`
-
-export const H1 = styled.h1`
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 30px;
 `
 
 export const InputLabel = styled.p`
@@ -51,22 +43,4 @@ export const Input = styled.input`
     line-height: 21px;
     color: #FFFFFF;
     margin-bottom: 30px;
-`
-
-export const Button = styled.button`
-    width: 100%;
-    height: 60px;
-    background: #D93856;
-    font-size: 17px;
-    line-height: 2px;
-    text-align: center;
-    color: #FFFFFF;
-
-    &:hover{
-        opacity: 0.8;
-    }
-
-    &:active{
-        opacity: 0.5;
-    }
 `

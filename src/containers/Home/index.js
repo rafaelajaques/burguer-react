@@ -2,7 +2,9 @@ import React, { useState, useRef } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-import { Container, Image, ContainerItems, H1, InputLabel, Input, Button, } from './style';
+import { Container, Image, ContainerItems, InputLabel, Input, } from './style';
+import H1 from '../../components/Title'
+import Button from '../../components/Button'
 
 import newOrder from '../../assets/burger1.svg'
 

@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-import { Container, Image, ContainerItems, H1, Paragraph, Button, Person, OrderContainer } from './style';
+import { Container, Image, ContainerItems, Paragraph, Person, OrderContainer } from './style';
+import H1 from '../../components/Title'
+import Button from '../../components/Button'
 
 import Order from '../../assets/burger2.svg'
 import Trash from '../../assets/trash.svg'
@@ -47,13 +49,14 @@ function Orders() {
             <Person key={client.id}>
               <OrderContainer>
                 <Paragraph> {client.order}</Paragraph>
+
                 <Paragraph> {client.name}</Paragraph>
               </OrderContainer>
               <button onClick={() => deleteOrder(client.id)}><img alt="lixeira" src={Trash} /></button>
             </Person>
           ))}
         </ul>
-        <Button onClick={goBackPage}>Voltar</Button>
+        <Button isBack={true} onClick={goBackPage}>Voltar</Button>
       </ContainerItems>
     </Container>
 

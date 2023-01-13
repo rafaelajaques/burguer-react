@@ -21,36 +21,6 @@ export const ContainerItems = styled.div`
     flex-direction: column;
 `
 
-export const H1 = styled.h1`
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom: 30px;
-`
-
-export const Button = styled.button`
-    width: 100%;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.14);
-    font-size: 17px;
-    line-height: 2px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 50px;
-    border: none;
-
-
-    &:hover{
-        opacity: 0.8;
-    }
-
-    &:active{
-        opacity: 0.5;
-    }
-`
-
 export const Person = styled.li`
     display: flex;
     justify-content: space-between;
