@@ -16,7 +16,7 @@ function Orders() {
   useEffect(() => {
     async function fetchOrders() {
 
-      const { data: allOrder } = await axios.get('http://localhost:3001/order')
+      const { data: allOrder } = await axios.get('https://hamburgueria-khaki.vercel.app/order')
 
       setClients(allOrder)
     }
@@ -26,7 +26,7 @@ function Orders() {
   }, [])
 
   async function deleteOrder(clientId) {
-    await axios.delete(`http://localhost:3001/order/${clientId}`)
+    await axios.delete(`https://hamburgueria-khaki.vercel.app/order/${clientId}`)
 
     const newOrders = clients.filter(client => client.id !== clientId)
 

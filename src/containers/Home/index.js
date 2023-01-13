@@ -15,7 +15,7 @@ function App() {
   const navigate = useNavigate();
 
   async function addNewOrder() {
-    const { data: newOrder } = await axios.post('http://localhost:3001/order', { order: inputOrder.current.value, name: inputName.current.value })
+    const { data: newOrder } = await axios.post('https://hamburgueria-khaki.vercel.app/order', { order: inputOrder.current.value, name: inputName.current.value })
 
     console.log(inputOrder.current.value)
     console.log(inputName.current.value)
