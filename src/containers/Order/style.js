@@ -45,16 +45,14 @@ export const OrderContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: left; 
     flex-wrap: wrap;
     width: 80%;
-    border: 1px solid orange;
 `
 
 export const Paragraph = styled.p`
     font-weight: 300;
     font-size: 16px;
     line-height: 21px;
-    color: red;
-    border: 1px solid cyan;
+    color: #ffffff;
 `
