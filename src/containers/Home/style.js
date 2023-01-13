@@ -10,7 +10,7 @@ export const Container = styled.div`
     align-items: center;
 `
 export const Image = styled.img`
-    height: 40%;
+    width: 20%;
 `
 
 export const ContainerItems = styled.div`
